@@ -5,7 +5,8 @@ Soft Dev, pd 2
 DISCO:
 Access dict items w/ dictName[key] or dictName.get(key())
 random.randint(a,b) is inclusive of a and b
-
+random.randrange(start, stop, step) will never >= stop regardless of how large step is
+random.randrange(stop) gives a random int from [0, stop) 
 QCC:
 Why does...
 
@@ -36,4 +37,13 @@ krewes = {
          }
 period = [2, 7, 8]
 krewe = krewes[period[random.randint(0,2)]] 
-print(krewe[random.randint(0,len(krewe)-1)])
+# print(krewe[random.randint(0,len(krewe)-1)])
+
+
+# print(random.randrange(10))
+
+print(random.randrange(1, 10, 3))
+
+
+
+

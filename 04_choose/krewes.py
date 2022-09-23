@@ -4,6 +4,7 @@ Soft Dev, pd 2
 
 DISCO:
 Access dict items w/ dictName[key] or dictName.get(key())
+random.randint(a,b) is inclusive of a and b
 
 QCC:
 Why does...
@@ -15,7 +16,12 @@ Why does...
 
 ... only print 2 [newline] 0?
 
+Why is random.randint(a,b) inclusive of a and b when the convention is that it should be exclusive to b?
+
 OPS Summary:
+1. Dictionary krewes with elements period:[list of devos]
+2. Pick a random period and select the corresponding list from krewes
+3. Pick a random devo from said list
 
 """
 import random

@@ -35,14 +35,15 @@ krewes = {
            7:["DIANA",  "DAVID",  "SAM",  "PRATTAY",  "ANNA",  "JING YI",  "ADEN",  "EMERSON",  "RUSSELL",  "JACOB",  "WILLIAM",  "NADA",  "SAMANTHA",  "IAN",  "MARC",  "ANJINI",  "JEREMY",  "LAUREN",  "KEVIN",  "RAVINDRA",  "SADI",  "EMILY",  "GITAE",  "MAY",  "MAHIR",  "VIVIAN",  "GABRIEL",  "BRIANNA",  "JUN HONG",  "JOSEPH",  "MATTHEW",  "JAMES",  "THOMAS",  "NICOLE",  "Karen"],
            8:["ALEKSANDRA",  "NAKIB",  "AMEER",  "HENRY",  "DONALD",  "YAT LONG",  "SEBASTIAN",  "DAVID",  "YUKI",  "SHAFIUL",  "DANIEL",  "SELENA",  "JOSEPH",  "SHINJI",  "RYAN",  "APRIL",  "ERICA",  "JIAN HONG",  "VERIT",  "JOSHUA",  "WILSON",  "AAHAN",  "GORDON",  "JUSTIN",  "MAYA",  "FAIYAZ",  "SHREYA",  "ERIC",  "JEFFERY",  "BRIAN",  "KEVIN",  "SAMSON",  "BRIAN",  "HARRY",  "wanying"]
          }
-period = [2, 7, 8]
-krewe = krewes[period[random.randint(0,2)]] 
-# print(krewe[random.randint(0,len(krewe)-1)])
+period = list(krewes.keys())
+periodnumber = period[random.randint(0,len(period)-1)]
+krewe = krewes[periodnumber] 
+print(str(periodnumber) + " : " + krewe[random.randint(0,len(krewe)-1)])
 
 
 # print(random.randrange(10))
 
-print(random.randrange(1, 10, 3))
+# print(random.randrange(1, 10, 3))
 
 
 

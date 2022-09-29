@@ -12,6 +12,10 @@ file.read() returns contents of file
 strip removes specified string from front and back of string
 
 QCC:
+Why does my code still have a /n at the end even though I used strip???
+What are the modes for open()?
+
+
 """
 
 import random

@@ -15,6 +15,7 @@ QCC:
 jobs = {}
 
 import csv
+import random
 
 ##opens and prints out content of csv
 with open("./occupations.csv", 'r') as file:
@@ -27,8 +28,13 @@ with open("./occupations.csv", 'r') as file:
       line_count = line_count + 1
   del jobs["Total"]
 
-  for e in jobs:
-      print(e)
+  ##for e in jobs:
+  ##    print(e)
 
+randomJob = random.random()*100
+print(randomJob)
 
-
+chance = 0
+for e in jobs:
+    if chance < randomJob:
+        chance = chance + jobs[e]

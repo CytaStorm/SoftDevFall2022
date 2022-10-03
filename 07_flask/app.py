@@ -22,6 +22,8 @@ app.run()  # Q5: Where have you seen similar constructs in other languages?
 
 '''
 DISCO:
+Have to use pip install flask
+running the file prints out an ip address used to access the website
 
 QCC:
 0. 

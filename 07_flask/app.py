@@ -1,3 +1,11 @@
+"""
+Jeff Chen
+SoftDev
+k07 - flask
+10-2-2022
+time spent:
+
+"""
 # your heading here
 
 from flask import Flask
@@ -17,10 +25,10 @@ DISCO:
 
 QCC:
 0. 
-1. 
-2. 
-3. 
-4. 
+1. '/' means current directory when browsing files
+2.
+3. Prints out name of file?
+4. No, it only returns the string, is not inside print
 5. 
 ...
 

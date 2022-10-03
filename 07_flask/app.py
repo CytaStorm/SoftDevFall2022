@@ -26,9 +26,9 @@ DISCO:
 QCC:
 0. 
 1. '/' means current directory when browsing files
-2.
-3. Prints out name of file?
-4. No, it only returns the string, is not inside print
+2. Doesn't print anywhere
+3. Nothing
+4. Shows on website
 5. 
 ...
 
@@ -36,4 +36,7 @@ INVESTIGATIVE APPROACH:
 <Your concise summary of how
  you and your team set about
  "illuminating the cave of ignorance" here...>
+ 
+ Used pip install flask to get flask, but running the file doesn't open anything of interest.
+ Opened ip address printed out by running this file in terminal, takes me to a website with "no hablo queso!" printed.
 '''

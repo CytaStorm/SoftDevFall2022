@@ -26,12 +26,12 @@ Have to use pip install flask
 running the file prints out an ip address used to access the website
 
 QCC:
-0. 
+0. Haven't seen this anywhere
 1. '/' means current directory when browsing files
 2. Doesn't print anywhere
 3. Nothing
 4. Shows on website
-5. 
+5. Nowhere?
 ...
 
 INVESTIGATIVE APPROACH:

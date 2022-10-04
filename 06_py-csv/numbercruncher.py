@@ -31,10 +31,14 @@ with open("./occupations.csv", 'r') as file:
   ##for e in jobs:
   ##    print(e)
 
-randomJob = random.random()*100
-print(randomJob)
+for x in range(100):
+    randomJob = random.random()*99.8
+    ##print(randomJob)
 
-chance = 0
-for e in jobs:
-    if chance < randomJob:
-        chance = chance + jobs[e]
+    chance = 0
+    for e in jobs:
+        if chance < randomJob:
+            chance = chance + jobs[e]
+        else:
+            print(e)
+            break

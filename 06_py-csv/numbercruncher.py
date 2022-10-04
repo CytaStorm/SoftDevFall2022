@@ -7,8 +7,11 @@ time spent: 45 min
 
 DISCO: 
 Built in CSV reader
-
+Can turn csv files into a dictionary, CSV files have objects called rows that store their data
+random.random() makes a random number from 0 - number
+Del deletes a key:value from a dict
 QCC:
+What other file types can python read in easily?
 
 """
 

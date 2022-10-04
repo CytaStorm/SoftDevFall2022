@@ -4,7 +4,7 @@ SoftDev
 k07 - flask
 10-2-2022
 time spent:
-
+30 min
 """
 # your heading here
 
@@ -26,12 +26,12 @@ Have to use pip install flask
 running the file prints out an ip address used to access the website
 
 QCC:
-0. Haven't seen this anywhere
-1. '/' means current directory when browsing files
+0. Haven't seen this anywhere (dunder method?)
+1. Root of file system
 2. Doesn't print anywhere
 3. Nothing
 4. Shows on website
-5. Nowhere?
+5. Nowhere? (Java Driver files (methods from other files))
 ...
 
 INVESTIGATIVE APPROACH:

@@ -40,6 +40,7 @@ def weighted_select(d):
         line += 1
     return "Other"
 
+#this prints out a string of all the jobs in the list separated by <br>
 def csvToString():
     result = ""
     jobsDict = read()

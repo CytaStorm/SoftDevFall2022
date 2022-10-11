@@ -56,5 +56,5 @@ def hello_world():
 
     a = read()
     b = weighted_select(a)
-    return "TNPG: Running Hippos <br><br> Selected job: <br> " + str(b) + "<br><br> List of Jobs:" + csvToString() # Q4: Will this appear anywhere? How u know?
+    return "TNPG: Running Hippos (Nicholas Tarsis, Vansh Saboo, Jeff Chen) <br><br> Selected job: <br> " + str(b) + "<br><br> List of Jobs:" + csvToString() # Q4: Will this appear anywhere? How u know?
 app.run()  # Q5: Where have you seen similar constructs in other languages?

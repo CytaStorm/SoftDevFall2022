@@ -1,18 +1,22 @@
 """
-Jeff Chen
+Jeff Chen, Samuel Lubelsky
 SoftDev
 K06 - Randomly select a job with weighted percentages
 2022-9-30
 time spent: 45 min
-
 DISCO: 
 Built in CSV reader
-Can turn csv files into a dictionary, CSV files have objects called rows that store their data
-random.random() makes a random number from 0 - number
-Del deletes a key:value from a dict
+del dict[key] deletes a key from dictionary
+csvreader is not a list, it is a special python object called an iterable
+that must be iterated through with a for loop
 QCC:
-What other file types can python read in easily?
-
+what exactly is an iterable and can they be converted to lists?
+OPS Summary:
+-reads the occupations.csv file using python's inbuilt csv reader.
+-first item of each row is a key, second item is a value in a dict
+-a rolling sum is used to pick a weighted random occupation.
+-testing to ensure the weighted picking is actually random runs the code many times
+and then displays how much each occupation showed up
 """
 
 jobs = {}
@@ -33,15 +37,22 @@ with open("./occupations.csv", 'r') as file:
 
   ##for e in jobs:
   ##    print(e)
-
-for x in range(100):
-    randomJob = random.random()*99.8
-    ##print(randomJob)
-
-    chance = 0
-    for e in jobs:
-        if chance < randomJob:
-            chance = chance + jobs[e]
-        else:
-            print(e)
-            break
+def choose_job(jobs: dict):
+    return random.choices(list(jobs), weights = list(jobs.values()))[0]
+def printJob(job):
+    print("Chosen Job is " + job)
+for _ in range(100):
+    chosenJob = choose_job(jobs)
+    printJob(chosenJob)
+#additional tests
+num_tests = 1_000_000
+test_dict = {}
+for _ in range(num_tests):
+    job = choose_job(jobs)
+    if job not in test_dict:
+        test_dict[job] = 1
+    else:
+        test_dict[job] += 1
+for num in test_dict:
+    test_dict[num] /= num_tests
+print(test_dict)

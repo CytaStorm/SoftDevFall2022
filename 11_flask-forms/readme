@@ -23,3 +23,9 @@ Uncommenting the lines
    print(request.args['username'])
 in disp_loginpage() created an error, as the method doesn't have a username to call on. 
 Uncommenting in authenticate works, because it does have a username from the html to call
+
+request.args is an immutableMultiDict that stores the stuff from login.html's output:
+      <input type="text" name="username">
+      <input type="submit" name="sub1">
+as 
+ImmutableMultiDict([('username', 'poop'), ('sub1', 'Submit Query')])

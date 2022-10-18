@@ -34,10 +34,10 @@ def authenticate():
     print("***DIAG: request.args ***")
     print(request.args)
     print("***DIAG: request.args['username']  ***")
-    print(request.form.get('username'))
+    print(request.form['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return render_template( 'response.html', username=request.form.get('username'))  #response to a form submission
+    return render_template( 'response.html', username=request.form['username'])  #response to a form submission
 
 
     

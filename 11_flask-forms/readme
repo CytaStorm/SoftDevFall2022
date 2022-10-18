@@ -16,5 +16,10 @@ Reconciliation:
 When we first spin up the site and go to 127.0.0.1:5000, it runs the disp_login, which displays the html template.
 
 The html has <form action="/auth">, which tells the site to put /auth in the address bar, alongside the values that we put into the form.
-In app.py, /auth runs the authenticate method, which displays "Waaaa hooo HAAAH"
+In app.py, /auth runs the authenticate method, which displays "Waaaa hooo HAAAH".
 
+Uncommenting the lines
+   print("***DIAG: request.args['username']  ***")
+   print(request.args['username'])
+in disp_loginpage() created an error, as the method doesn't have a username to call on. 
+Uncommenting in authenticate works, because it does have a username from the html to call

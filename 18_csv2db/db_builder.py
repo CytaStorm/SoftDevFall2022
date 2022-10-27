@@ -1,8 +1,8 @@
 #The Bottlers (Jeff Chen, Yusha Aziz, Fang Chen)
 #SoftDev  
-#skeleton/stub :: SQLITE3 BASICS
+#K18 :: SQLITE3 BASICS
 #25 Oct 2022
-#Time spent: 
+#Time spent: 1.0 hrs
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitate CSV I/O
@@ -15,16 +15,43 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 
 #==========================================================
 
+# if c.execute("select name from sqlite_schema where type = 'table'").fetchall() == []:
 
-# < < < INSERT YOUR TEAM'S POPULATE-THE-DB CODE HERE > > >
-with open("./courses.csv",) as file:
-    reader = csv.DictReader(file)
+# CREATING COURSES
+tbleName = "courses"
+parameters = "code TEXT, mark INT, id INT"
 
-c.execute("select name from sqlite_master")
-tables = c.fetchall();
-if "courses" not in tables:
-    command = "create table courses(code text, mark int, id int)"   #test SQL stmt in sqlite3 shell, save as string
-    c.execute(command)    # run SQL statement
+command = (f"create table if not exists {tbleName} ({parameters})")
+c.execute(command)
+
+with open("./courses.csv") as file:
+	reader = csv.DictReader(file)
+	for row in reader:
+		code = row['code']
+		mark = row['mark']
+		id = row['id']
+		command = (f"insert into {tbleName} values(\"{code}\", {mark}, {id})")
+		c.execute(command)
+
+# CREATING STUDENTS
+tbleName = "students"
+parameters = "name TEXT, age INT, id INT"
+
+command = (f"create table if not exists {tbleName} ({parameters})")
+c.execute(command)
+
+with open("./students.csv") as file:
+	reader = csv.DictReader(file)
+	for row in reader:
+		name = row['name']
+		age = row['age']
+		id = row['id']
+		command = (f"insert into {tbleName} values(\"{name}\", {age}, {id})")
+		c.execute(command)
+
+print(c.execute('select * from courses').fetchall())
+print(c.execute('select * from students').fetchall())
+
 #==========================================================
 
 db.commit() #save changes

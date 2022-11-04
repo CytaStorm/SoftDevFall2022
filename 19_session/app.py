@@ -1,3 +1,10 @@
+'''
+The Bottlers: Jeff Chen, Fang Min Chen, Yusha Aziz
+SoftDev
+K19 - Sessions Greetings
+4-November-2022
+Time spent: 1 hrs
+'''
 from flask import session, Flask, render_template, request
 
 app = Flask(__name__)

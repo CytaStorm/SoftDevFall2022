@@ -12,9 +12,16 @@
     </h3>
     <form action="/login" method="POST">
       <input type="text" name="username">
+      {% if error == "wrong username!" %}
+      	username is wrong!
+	{% endif %}	
       <br><br>
-      <!--<input type="text" name="password">
-	<--!>
+      <input type="password" name="password">
+      {% if error == "wrong password!" %} 
+        password is wrong!
+        {% endif %}
+
+      <br><br>
       <input type="submit" name="sub1">
     </form>
     <br>

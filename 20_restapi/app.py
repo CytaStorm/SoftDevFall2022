@@ -1,5 +1,5 @@
 """
-TNPG (Jeff Chen, Brian Chen)
+Soup Noodles (Jeff Chen, Brian Chen)
 SoftDev
 K20: A RESTful Journey Skyward
 2022-11-22
@@ -16,12 +16,12 @@ def home():
     api = None
     with open('key_nasa.txt', 'r') as f:
         api = f.read() 
-    print(api)#checks for api reading
+    #print(api)#checks for api reading
     URL = f"https://api.nasa.gov/planetary/apod?api_key={api}"
-    print(URL)#checks for getting correct URL
+    #print(URL)#checks for getting correct URL
     response = urlopen(URL)#grabs the JSON from the page
     data_json = json.loads(response.read())#reads the JSON of the page and turns it into a dictionary
-    print(data_json)#checks for correct retrieval of JSON
+    #print(data_json)#checks for correct retrieval of JSON
 
     return render_template('main.html', title=data_json['title'], image=data_json['url'], desc=data_json['explanation'])
 

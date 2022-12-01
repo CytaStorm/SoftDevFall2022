@@ -12,4 +12,4 @@ Bootstrap uses a lot of divs
 
 q0: 1
 q0b: Bootstrap official docs, and talking to Ivan
-q1: Bootstrap
+q1: Bootstrap, since it is far simpler and more intutitive to use than Foundation

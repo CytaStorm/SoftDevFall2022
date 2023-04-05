@@ -1,0 +1,23 @@
+Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+SoftDev pd0
+K27 -- Basic functions in JavaScript
+2023-04-03t
+
+DISCO
+-----------------------------------------------------------------
+* Ooooh, i forgot everything about drracket/scheme
+* Aaah-haa!  javascript is very similar syntactically to java, and i can cod fairly easily without even referring to docs
+* ...
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Why...?
+* Huh?
+* Teh whah now?
+* 
+
+=================================================================
+
+
+

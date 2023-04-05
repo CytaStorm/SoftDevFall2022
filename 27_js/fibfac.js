@@ -1,0 +1,37 @@
+// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
+// SoftDev pd0
+// K27 -- Basic functions in JavaScript
+// 2023-04-04t
+// --------------------------------------------------
+
+
+// as a duo...
+// pair programming style,
+// implement a fact and fib fxn
+console.log('hello world');
+function fact(n) {
+	if (n == 0) {
+		return 1;
+	}
+	else {
+		return n * fact(n-1);
+	}
+}
+console.log(fact(4));
+console.log(fact(1));
+console.log(fact(5));
+
+function fib(n) {
+	if (n == 0) {
+		return 0;
+	} else if (n == 1) {
+		return 1;
+	} else {
+		return (fib(n-2) + fib(n-1));
+	}
+}
+console.log(fib(1));
+console.log(fib(2));
+console.log(fib(3));
+console.log(fib(4));
+//Do whatever you think is needed. Think: S I M P L E.   Think: S M A R T.

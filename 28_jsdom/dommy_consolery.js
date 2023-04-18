@@ -1,23 +1,3 @@
-/*
-   your PPTASK:
-   
-   Test drive each bit of code in this file,
-    and insert comments galore, indicating anything
-     you discover,
-    	have questions about,
-    		or otherwise deem notable.
-    		
-    		Write with your future self or teammates in mind.
-    		
-    		If you find yourself falling out of flow mode, consult 
-    		other teams
-    		MDN
-
-   A few comments have been pre-filled for you...
-   
-   (delete this block comment once you are done)
-*/
-
 // Team Keychron :: Jeff Chen, Wei Chen Liu
 // SoftDev pd8
 // K28 -- Getting more comfortable with the dev console and the DOM
@@ -102,6 +82,7 @@ function fact(n) {
 		return n * fact(n-1);
 	}
 }
+console.log("fact: " + fact(4))
 // FAC
 function fib(n) {
 	if (n == 0) {
@@ -112,6 +93,7 @@ function fib(n) {
 		return (fib(n-2) + fib(n-1));
 	}
 }
+console.log("fib: " + fib(5))
 // GCD
 function gcd(a, b) {
   var rem = a % b;
@@ -122,7 +104,7 @@ function gcd(a, b) {
   return gcd(b, rem);
 }
 
-//console.log("gcd: " + gcd(10, 5))
+console.log("gcd: " + gcd(10, 5))
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.

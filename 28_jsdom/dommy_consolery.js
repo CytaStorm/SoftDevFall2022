@@ -83,6 +83,7 @@ function fact(n) {
 	}
 }
 console.log("fact: " + fact(4))
+addItem(fact(4))
 // FAC
 function fib(n) {
 	if (n == 0) {
@@ -94,6 +95,7 @@ function fib(n) {
 	}
 }
 console.log("fib: " + fib(5))
+addItem(fib(5))
 // GCD
 function gcd(a, b) {
   var rem = a % b;
@@ -103,7 +105,7 @@ function gcd(a, b) {
   }
   return gcd(b, rem);
 }
-
+addItem(gcd(10,5))
 console.log("gcd: " + gcd(10, 5))
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.

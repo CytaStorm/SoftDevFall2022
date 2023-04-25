@@ -11,10 +11,12 @@ var mode = "rect";
 var toggleMode = (e) => {
     console.log("toggling...");
     if (mode === "rect") {
-        mode = "circ"
+        mode = "circ";
+        document.getElementById("buttonToggle").innerHTML = "circ";
     }
     else {
-        mode = "rect"
+        mode = "rect";
+        document.getElementById("buttonToggle").innerHTML = "rect";
     }
 }
 
@@ -30,7 +32,6 @@ var drawCircle = (e) => {
     var mouseX = e.offsetX; //gets X-coor of mouse when event is fired
     var mouseY = e.offsetY; //gets Y-coor of mouse when event is fired
     console.log("mouseclick registered at ", mouseX, mouseY);
-    ctx.fillStyle = "#FF0000";
     ctx.arc(mouseX, mouseY, 50, 0, 2 * Math.PI);
     ctx.fillstyle = "red";
     ctx.fill();
@@ -45,7 +46,7 @@ var draw = (e) => {
 }
 
 var wipeCanvas = () => {
-    ctx.clearReect(0,0,600,600);
+    ctx.clearRect(0,0,600,600);
 }
 c.addEventListener("click", draw) //passes the mouse event as parameter for the function
 var bToggler = document.getElementById("buttonToggle");

@@ -11,3 +11,5 @@ Comment: stoppropagation interrupts something in the javascript: current theory:
         2.js rearranges popups based on DOM and boolean args
 
         stoppropagation interrupts right after step 1, makes any boolean args/dom priority not affect the popups
+
+above is wronggggggg

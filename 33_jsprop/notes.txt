@@ -1,0 +1,13 @@
+Team Euliss Spikes -- Aahan, Jeff
+K33
+27-4-2023
+
+
+QCC:
+Q: It seems like the order matters for the loops, but adding eventlistner by itself ignores order??
+Comment: Boolean gives popup priority
+Comment: stoppropagation interrupts something in the javascript: current theory: 
+        1.javascript reads the eventlisteners in order of appearance in code
+        2.js rearranges popups based on DOM and boolean args
+
+        stoppropagation interrupts right after step 1, makes any boolean args/dom priority not affect the popups
